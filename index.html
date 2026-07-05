@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Master</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>🎯 Guess Master</h1>
+
+        <p class="subtitle">
+            Guess the secret number
+        </p>
+
+        <div class="difficulty">
+
+            <label>Difficulty</label>
+
+            <select id="difficulty">
+
+                <option value="50">Easy (1-50)</option>
+
+                <option value="100" selected>Medium (1-100)</option>
+
+                <option value="500">Hard (1-500)</option>
+
+            </select>
+
+        </div>
+
+        <div class="range">
+            Number Between
+            <span id="rangeText">1 - 100</span>
+        </div>
+
+        <input
+            type="number"
+            id="guessInput"
+            placeholder="Enter your guess">
+
+        <button id="guessBtn">
+            Guess
+        </button>
+
+        <button id="restartBtn">
+            Restart Game
+        </button>
+
+        <div class="message" id="message">
+
+            Start Guessing...
+
+        </div>
+
+        <div class="stats">
+
+            <div>
+
+                Attempts
+
+                <h2 id="attempts">
+                    0
+                </h2>
+
+            </div>
+
+            <div>
+
+                Timer
+
+                <h2 id="timer">
+                    0
+                </h2>
+
+            </div>
+
+            <div>
+
+                Best
+
+                <h2 id="bestScore">
+                    --
+                </h2>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
